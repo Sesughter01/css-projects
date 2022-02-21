@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY STYLES */
+body{
+    font-size: 18px;
+}
+/* MAIN CONTAINER STYLES */
+#main{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    /* float: left; */
+}
+#main .box{
+    /* width: 20vw; */
+    /* height: 15vw; */
+    border-radius: 10px;
+    box-shadow: 1px 1px ;
+    padding: 5px;
+    float: left;
+    /* overflow: auto; */
+}
+#main >.box h4{
+    /* margin: 20% 20% auto; */
+    /* text-align: center; */
+    
+}
+#main > .floats-1{
+    /* overflow: auto; */
+    margin: 10px 0px auto 10px;
+    background-color: aquamarine;
+    /* display: inline-block; */
+}
+#main > .floats-1::after{
+   content: "";
+   clear: both;
+   display: table;
+    /* display: inline-block; */
+}
+#main > .box p{
+    padding: 5px;
+    /* display: inline-block; */
+}
+#main > .box  img{
+    
+    /* width: 15vw;
+    height: 8vh; */
+    width: 25vw;
+    height: 15vh;
+    float: right;
+}
+
+
+#main > .floats-2{
+    margin: 10px 0px auto 20px;
+    background-color: #a17fff;
+    clear:left;
+    /* display: inline-block; */
+}
+#main > .floats-3{
+    margin: 10px 0px auto 20px;
+    background-color: #7fe1ff;
+    /* clear:left; */
+    /* display: inline-block; */
+}
+#main > .floats-4{
+    margin: 10px 20px auto 20px;
+    background-color: #ff7fe3;
+    /* float:right; */
+    /* display: inline-block; */
+}
+
+
+#main > .floats-2 p + img {
+    
+    overflow: hidden;
+}
